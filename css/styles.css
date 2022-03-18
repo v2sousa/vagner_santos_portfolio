@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
+body {
+  background: linear-gradient(256.85deg, #041832 27.26%, #346ba7 96.03%);
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background-color: #fff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 64px;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /*espaçar e colocar os itens separados*/
+}
+.perfil {
+  display: flex; /* permite diversas configurações de alinhamento */
+}
+.perfil-foto {
+  border-radius: 100px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.titulo {
+  margin-left: 16px;
+}
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.tema button {
+  align-self: flex-end; /* posiciona um objeto de forma meio automatica */
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 16px; /*1ª distancia sup e inf, 2ª distancia esq e dir */
+  background-color: #ecf4ff;
+  border-radius: 100px;
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  padding: 32px;
+  margin-top: 24px;
+  border-radius: 10px;
+}
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 30px;
+}
+.projetos-item {
+  list-style-type: none; /*Comando retira os pontos da lista*/
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 50px; /*Altura das linhas*/
+}
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none; /*retira o sublinado da palavra*/
+}
+
+/*Estilizando o tema escuro*/
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+.dark .projetos {
+  color: #1c1c1c;
+}
+.dark .tema button{
+  background: #1c1c1c;
+    color:#ffffff;
+  border: 2px solid #f7f7f7;
+}
